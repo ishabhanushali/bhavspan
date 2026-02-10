@@ -1,0 +1,38 @@
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .about, .services {
+    padding: 40px 20px;
+  }
+
+  .service-box {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .stats-section {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+}

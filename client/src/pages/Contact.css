@@ -1,0 +1,39 @@
+.contact-container {
+  padding: 80px 60px;
+  background: #F1F5F9;
+  text-align: center;
+}
+
+.contact-header h1 {
+  font-size: 2.5rem;
+  color: #0B1F3A;
+}
+
+.contact-header p {
+  margin-top: 15px;
+  color: #64748B;
+}
+
+.contact-info {
+  margin-top: 50px;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+@media (max-width: 768px) {
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .stats-section {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+}

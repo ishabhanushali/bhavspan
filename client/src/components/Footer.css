@@ -1,0 +1,23 @@
+.footer {
+  background-color: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .stats-section {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+}
+
+

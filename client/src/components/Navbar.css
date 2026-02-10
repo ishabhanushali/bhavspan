@@ -1,0 +1,38 @@
+.navbar {
+  background-color: #0B1F3A;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;   /* 🔥 ADD THIS */
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 30px;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #60A5FA;
+}
+
+/* ✅ RESPONSIVE PART */
+@media (max-width: 768px) {
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .stats-section {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+}

@@ -1,0 +1,53 @@
+.about-container {
+  padding: 80px 60px;
+  background: #F1F5F9;
+}
+
+.about-hero {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.about-hero h1 {
+  font-size: 2.8rem;
+  color: #0B1F3A;
+}
+
+.about-hero p {
+  margin-top: 20px;
+  color: #475569;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.about-text {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.about-text:hover {
+  transform: translateY(-6px);
+}
+
+@media (max-width: 768px) {
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .stats-section {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+}
