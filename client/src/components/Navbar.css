@@ -1,15 +1,26 @@
+/* ===== NAVBAR MAIN ===== */
 .navbar {
   background-color: #0B1F3A;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 80px;
+  position: relative;
+  z-index: 1000;
 }
 
+/* ===== LOGO ===== */
 .logo {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 600;
-  color: white;   /* 🔥 ADD THIS */
+  color: white;
+  letter-spacing: 1px;
+}
+
+/* ===== DESKTOP LINKS ===== */
+.nav-links {
+  display: flex;
+  align-items: center;
 }
 
 .nav-links a {
@@ -17,22 +28,57 @@
   text-decoration: none;
   margin-left: 30px;
   transition: 0.3s ease;
+  font-weight: 500;
 }
 
 .nav-links a:hover {
   color: #60A5FA;
 }
 
-/* ✅ RESPONSIVE PART */
+/* ===== HAMBURGER (Hidden on Desktop) ===== */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+/* ============================= */
+/* ===== MOBILE RESPONSIVE ===== */
+/* ============================= */
+
 @media (max-width: 768px) {
 
-  .hero h1 {
-    font-size: 2rem;
+  .navbar {
+    padding: 20px 30px;
   }
 
-  .stats-section {
+  /* Hide desktop links */
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #0B1F3A;
     flex-direction: column;
-    gap: 40px;
+    align-items: center;
+    display: none;
+    padding: 20px 0;
+    z-index: 999;
   }
 
+  .nav-links a {
+    margin: 15px 0;
+    font-size: 18px;
+  }
+
+  /* Show menu when active */
+  .nav-links.active {
+    display: flex;
+  }
+
+  /* Show hamburger */
+  .hamburger {
+    display: block;
+  }
 }
